@@ -1,0 +1,18 @@
+our_set = set()
+our_set2 = {0}
+print(our_set, type(our_set))
+print(our_set2, type(our_set2))
+our_set.add('tomato')
+our_set2.add("potato")
+print(our_set)
+print(our_set2)
+x = "tomato"
+print(x in our_set)
+print(x in our_set2)
+print(our_set.isdisjoint(our_set2))
+our_set3 = our_set.union(our_set2)
+print(our_set3)
+our_set.update(our_set3)
+our_set.update(our_set2)
+print(our_set)
+print(our_set.issubset(our_set3))
